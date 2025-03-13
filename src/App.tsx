@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import React, {useEffect, useState} from 'react'
 import DataFetcher from './DataFetcher'
 import {UserInterface} from './UserInterface'
-=======
-import React from 'react'
-import UncontrolledLoginForm from './UncontrolledLoginForm'
->>>>>>> 9000138dd3787d3be0009c2a2b9c6bd2a3e3058b
 
 const App = () => {
     const [users, setUsers] = useState<UserInterface[]>([]);
@@ -28,7 +23,7 @@ const App = () => {
             }, []);
         
   return (
-<<<<<<< HEAD
+
     <div style={{textAlign: 'center', marginLeft: '500px', backgroundColor: 'violet', width: '500px'}}>
       <h1>Users list</h1>
       {loading && <p>Loading...</p>}
@@ -45,11 +40,6 @@ const App = () => {
           ))}
        </ul>
         )}
-=======
-    <div style={{ textAlign: 'center', marginLeft:'500px', maxWidth: '500px', backgroundColor: 'blue', padding: '20px' }}>
-      <h1 style={{color: 'white'}}>Uncontrolled Inputs App</h1>
-      <UncontrolledLoginForm />
->>>>>>> 9000138dd3787d3be0009c2a2b9c6bd2a3e3058b
     </div>
   )
 }
